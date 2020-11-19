@@ -1,0 +1,12 @@
+<audio>
+	<source src="audio/audio1.mp3"></source>
+	<source src="audio/audio2.ogg"></source>
+</audio>
+
+$("#speak").mouseenter(function(){
+	$("<audio></audio>").attr({ 
+		'src':'audio/'+Math.ceil(Math.random() * 5)+'.mp3', 
+		'volume':0.4,
+		'autoplay':'autoplay'
+	}).appendTo("body");
+});
